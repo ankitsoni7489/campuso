@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/library.css">
+</head>
+<body>
+    <div >
+        <a href="http://127.0.0.1:5000">
+            <div class="ball-container">
+                <div class="ball">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/Image/logo.png" alt="" id="logo">
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="/event" >Event</a></li>
+                <li><a href="/planner">Study Planner</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button">
+                            <a class="button">Resource</a>
+                        </summary>
+                        <ul class="selector">
+                            <div class="grid-bar">
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/links">External Links</a>
+                                            <p>Scholarships, internships, and more</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/">Complaint Box</a>
+                                            <p>Submit and track complaints</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Library System</a>
+                                            <p>Manage books and payments</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Unifreelance Hub</a>
+                                            <p>Find campus jobs and freelance work</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="">Lost & Found</a>
+                                            <p>Report lost items or find claimed items</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Note Sharing</a>
+                                            <p>Share and access study materials</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </details>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="log-sign">
+            <a href="" ><button id="login">Log In</button></a>
+            <a href="" ><button id="signup">Sign Up</button></a>
+        </div>
+    </header>
+
+    <!-- body -->
+
+    <div class="page-name">
+        <h1>Library Services</h1>
+        <p>Browser books, access study material, and manage your library Resource</p>
+        <div class="log-sign">
+            <a href="" ><button id="login">Library Hour and Location</button></a>
+            <a href="" ><button id="signup">Book Your Private Room</button></a>
+        </div>
+    </div>
+    
+    <div class="book-grid">
+        <div class="book-box">
+            <div class="book-img">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="book images">
+            </div>
+            <div class="book-info">
+                <div class="book-name">
+                    <h1>Book Name</h1>
+                    <p>Book Author</p>
+                    <p>short dicription of book in 10 words</p>
+                </div>
+                <div class="availability">
+                    <div>
+                        <p>Available</p>
+                        <p>Due Date</p>
+                    </div>
+                    <div class="color-para">
+                        <p>Available quantity</p>
+                        <p>Issue date</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="issue">Reserved Book</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="/Image/logo.png" alt="logo" class="footer-img">
+                <p>The all-in-one platform for university life, helping students and faculty connect, organize, and thrive.</p>
+            </div>
+            <div class="footer-div" >
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Navigation</li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/event">Events</a></li>
+                        <li><a href="planner">Study Planner</a></li>
+                        <li><a href="/facultydirectory">Faculty</a></li>
+                        <li><a href="/library">Library</a></li>  
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Resource</li>
+                        <li><a href="/complain">Complain Box</a></li>
+                        <li><a href="/lost">Lost & Found</a></li>
+                        <li><a href="/menu">Cafeteria Menu</a></li>
+                        <li><a href="/note">Note Sharing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul"> 
+                        <li class="footer-li">Opportunities</li>
+                        <li><a href="/links">External Links</a></li>
+                        <li><a href="/unifreelance">Unifreelance Hub</a></li>
+                        <li>Careers</li>
+                        <li>Partners</li> 
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Legal</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="icons">
+            <p>Copyright 2023 Unifreelance. All rights reserved.</p>
+            <div>
+                <img src="" alt="insta">
+                <img src="" alt="fb">
+                <img src="" alt="twiter">
+                <img src="" alt="telegram">
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

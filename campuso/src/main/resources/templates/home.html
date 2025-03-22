@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+<body>
+    <div >
+        <a href="http://127.0.0.1:5000">
+            <div class="ball-container">
+                <div class="ball">
+					<img src="/Image/chat.png" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/Image/logo.png" alt="" id="logo">
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="/api/all" >Event</a></li>
+                <li><a href="/planner">Study Planner</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button">
+                            <a class="button">Resource</a>
+                        </summary>
+                        <ul class="selector">
+                            <div class="grid-bar">
+                                <div>
+                                    <li>
+                                        <div>
+                                            <h6>Campus Resource</h6>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h6>Academic</h6>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h6>Opportunities</h6>
+                                            <a href="/links">External Links</a>
+                                            <p>Scholarships, internships, and more</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <h6>Campus Resource</h6>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h6>Academic</h6>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h6>Opportunities</h6>
+                                            <a href="/links">External Links</a>
+                                            <p>Scholarships, internships, and more</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <h6>Campus Resource</h6>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h6>Academic</h6>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </details>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="log-sign">
+            <a href="" ><button id="login">Log In</button></a>
+            <a href="" ><button id="signup">Sign Up</button></a>
+        </div>
+    </header>
+
+
+    <!-- body -->
+     <div class="body-part">
+        <div class="body-welcome">
+            <div class="green-circle"></div>
+            <h3 >Welcome to the future of campus life</h3>
+        </div>
+        <p class="para-one-body">Your Ultimate University Platform</p>
+        <p class="para-two-body">Campuso brings together everything you need for a seamless university experience—from event scheduling to study planning, all in one elegant platform.</p>
+        <div class="log-sign-button">
+            <a href=""><button class="body-button" id="Started">Get Started</button></a>
+            <a href=""><button class="body-button" id="learn">Learn More</button></a>
+        </div>
+     </div>
+
+     <!-- animation  -->
+    <!-- aniamtion -->
+
+
+    <!-- tools -->
+     <div class="tools">
+        <h3 class="tools-head">All the tools you need</h3>
+        <p class="tools-para">Campuso provides a comprehensive suite of features designed to enhance every aspect of university life, from academics to social activities.</p>
+     </div>
+     <div class="main-grid">
+        <div class="tool-grid">
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Event Scheduling</h5>
+                <p class="grid-para">Register and manage campus events with ease. Get notified about upcoming activities.</p>
+                <div class="grid-link">
+                    <a href="/api/all"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Study Planner</h5>
+                <p class="grid-para">Register and manage campus events with ease. Get notified about upcoming activities.</p>
+                <div class="grid-link">
+                    <a href="/planner"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Faculty Directory</h5>
+                <p class="grid-para">Access professor information including contact details and office hours.</p>
+                <div class="grid-link">
+                    <a href="/facultydirectory"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Complaint Box</h5>
+                <p class="grid-para">Submit and track complaints across various categories with a unique tracking ID.</p>
+                <div class="grid-link">
+                    <a href="/complain"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Lost & Found</h5>
+                <p class="grid-para">Report lost items or submit found items with images and contact information.</p>
+                <div class="grid-link">
+                    <a href="/lost"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Cafeteria Menu</h5>
+                <p class="grid-para">View daily food options with availability, portion size, and pricing information.</p>
+                <div class="grid-link">
+                    <a href="/menu"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Library System</h5>
+                <p class="grid-para">Track borrowed books, due dates, and fines. Pay outstanding fees online.</p>
+                <div class="grid-link">
+                    <a href="/library"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Note Sharing</h5>
+                <p class="grid-para">Access and share course notes organized by subject. Discuss questions with peers.</p>
+                <div class="grid-link">
+                    <a href="/note"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>External Links</h5>
+                <p class="grid-para">Discover curated resources for scholarships, internships, jobs, and free courses.</p>
+                <div class="grid-link">
+                    <a href="/links"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            <div class="grid-box">
+                <img src="" alt="icon">
+                <h5>Unifreelance Hub</h5>
+                <p class="grid-para">Connect with freelance opportunities within the university community.</p>
+                <div class="grid-link">
+                    <a href="/unifreelance"><button class="grid-button">Learn More</button></a>
+                    <img src="" alt="arrow">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+     <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="/Image/logo.png" alt="logo" class="footer-img">
+                <p>The all-in-one platform for university life, helping students and faculty connect, organize, and thrive.</p>
+            </div>
+            <div class="footer-div" >
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Navigation</li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/event">Events</a></li>
+                        <li><a href="planner">Study Planner</a></li>
+                        <li><a href="/facultydirectory">Faculty</a></li>
+                        <li><a href="/library">Library</a></li>  
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Resource</li>
+                        <li><a href="/complain">Complain Box</a></li>
+                        <li><a href="/lost">Lost & Found</a></li>
+                        <li><a href="/menu">Cafeteria Menu</a></li>
+                        <li><a href="/note">Note Sharing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul"> 
+                        <li class="footer-li">Opportunities</li>
+                        <li><a href="/links">External Links</a></li>
+                        <li><a href="/unifreelance">Unifreelance Hub</a></li>
+                        <li>Careers</li>
+                        <li>Partners</li> 
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Legal</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="icons">
+            <p>Copyright 2023 Unifreelance. All rights reserved.</p>
+            <div>
+                <img src="" alt="insta">
+                <img src="" alt="fb">
+                <img src="" alt="twiter">
+                <img src="" alt="telegram">
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/event.css">
+</head>
+<body>
+    <!-- header -->
+    <div >
+        <a href="http://127.0.0.1:5000">
+            <div class="ball-container">
+                <div class="ball">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/Image/logo.png" alt="" id="logo">
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="/api/all" >Event</a></li>
+                <li><a href="/planner">Study Planner</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button">
+                            <a class="button">Resource</a>
+                        </summary>
+                        <ul class="selector">
+                            <div class="grid-bar">
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/links">External Links</a>
+                                            <p>Scholarships, internships, and more</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/">Complaint Box</a>
+                                            <p>Submit and track complaints</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Library System</a>
+                                            <p>Manage books and payments</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Unifreelance Hub</a>
+                                            <p>Find campus jobs and freelance work</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="">Lost & Found</a>
+                                            <p>Report lost items or find claimed items</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Note Sharing</a>
+                                            <p>Share and access study materials</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </details>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="log-sign">
+            <a href="" ><button id="login">Log In</button></a>
+            <a href="" ><button id="signup">Sign Up</button></a>
+        </div>
+    </header>
+
+    <!-- body -->
+
+    <div class="page-name">
+        <h1>Campus Event</h1>
+        <p>Discover and register for upcoming events, workshops, and seminars on campus.</p>
+    </div>
+
+    <div class="event-grid">
+        <!-- <div> 
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div> -->
+        <div class="event-block" th:each="event : ${events}">
+            <div>
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="event image">
+            </div>
+            <div class="block-info" >
+                <div class="event-name">
+                    <h2 th:text="${event.event_name}"></h2>
+                    
+                </div>
+                <h6>Date and time of event</h6>
+                <p class="discription" th:text="${event.type}"></p>
+                <div class="place-register">
+                    <p>Place of the event</p>
+                    <a href=""><button>Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="/Image/logo.png" alt="logo" class="footer-img">
+                <p>The all-in-one platform for university life, helping students and faculty connect, organize, and thrive.</p>
+            </div>
+            <div class="footer-div" >
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Navigation</li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/event">Events</a></li>
+                        <li><a href="planner">Study Planner</a></li>
+                        <li><a href="/facultydirectory">Faculty</a></li>
+                        <li><a href="/library">Library</a></li>  
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Resource</li>
+                        <li><a href="/complain">Complain Box</a></li>
+                        <li><a href="/lost">Lost & Found</a></li>
+                        <li><a href="/menu">Cafeteria Menu</a></li>
+                        <li><a href="/note">Note Sharing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul"> 
+                        <li class="footer-li">Opportunities</li>
+                        <li><a href="/links">External Links</a></li>
+                        <li><a href="/unifreelance">Unifreelance Hub</a></li>
+                        <li>Careers</li>
+                        <li>Partners</li> 
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Legal</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="icons">
+            <p>Copyright 2023 Unifreelance. All rights reserved.</p>
+            <div>
+                <img src="" alt="insta">
+                <img src="" alt="fb">
+                <img src="" alt="twiter">
+                <img src="" alt="telegram">
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

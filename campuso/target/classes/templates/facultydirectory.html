@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/faculty.css">
+</head>
+<body>
+    <div >
+        <a href="http://127.0.0.1:5000">
+            <div class="ball-container">
+                <div class="ball">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/Image/logo.png" alt="" id="logo">
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="/event" >Event</a></li>
+                <li><a href="/planner">Study Planner</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary role="button">
+                            <a class="button">Resource</a>
+                        </summary>
+                        <ul class="selector">
+                            <div class="grid-bar">
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/facultydirectory">Faculty Directory</a>
+                                            <p>Contact information for professors</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/menu">Cafeteria Menu</a>
+                                            <p>Check food availability and prices</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="/links">External Links</a>
+                                            <p>Scholarships, internships, and more</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="/">Complaint Box</a>
+                                            <p>Submit and track complaints</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Library System</a>
+                                            <p>Manage books and payments</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Unifreelance Hub</a>
+                                            <p>Find campus jobs and freelance work</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <div>
+                                            <a href="">Lost & Found</a>
+                                            <p>Report lost items or find claimed items</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="">Note Sharing</a>
+                                            <p>Share and access study materials</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </details>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="log-sign">
+            <a href="" ><button id="login">Log In</button></a>
+            <a href="" ><button id="signup">Sign Up</button></a>
+        </div>
+    </header>
+
+    <!-- body -->
+
+    <div class="page-name">
+        <h1>Faculty Directory</h1>
+        <p>Connect with our professors and staff. Find contact inforamtion, office hours, and specialization</p>
+    </div>
+    <div class="directory">
+        <div class="faculty-box">
+            <div class="faculty-img">
+                <img src="" alt="">
+            </div>
+            <div class="faculty-info">
+                <h1>name of the faculty</h1>
+                <h3>subject of faculty</h3>
+                <h3>email of faculty</h3>
+                <h3>faculty staff room</h3>
+                <button class="btn" onclick="toggleContent()" id="toggleBtn">Show More</button>
+            </div>
+            <div class="faculty-info">
+                <h3>faculty contact</h3>
+                <h3>faculty timing</h3>
+            </div>
+            <div class="faculty-info">
+                <h3>faculty department</h3>
+            </div>
+        </div>
+        <div class="content" id="extraContent">
+            <div class="hide-part">
+                <div>
+                    <h3>Publication</h3>
+                    <p>number of Publication</p>
+                </div>
+                <div>
+                    <h3>Experience</h3>
+                    <p>years of Experience</p>
+                </div>
+                <div>
+                    <h3>course</h3>
+                    <p>number1, number 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="/Image/logo.png" alt="logo" class="footer-img">
+                <p>The all-in-one platform for university life, helping students and faculty connect, organize, and thrive.</p>
+            </div>
+            <div class="footer-div" >
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Navigation</li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/event">Events</a></li>
+                        <li><a href="planner">Study Planner</a></li>
+                        <li><a href="/facultydirectory">Faculty</a></li>
+                        <li><a href="/library">Library</a></li>  
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Resource</li>
+                        <li><a href="/complain">Complain Box</a></li>
+                        <li><a href="/lost">Lost & Found</a></li>
+                        <li><a href="/menu">Cafeteria Menu</a></li>
+                        <li><a href="/note">Note Sharing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul"> 
+                        <li class="footer-li">Opportunities</li>
+                        <li><a href="/links">External Links</a></li>
+                        <li><a href="/unifreelance">Unifreelance Hub</a></li>
+                        <li>Careers</li>
+                        <li>Partners</li> 
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-ul">
+                        <li class="footer-li">Legal</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="icons">
+            <p>Copyright 2023 Unifreelance. All rights reserved.</p>
+            <div>
+                <img src="" alt="insta">
+                <img src="" alt="fb">
+                <img src="" alt="twiter">
+                <img src="" alt="telegram">
+            </div>
+        </div>
+     </footer>
+
+     <script>
+        function toggleContent() {
+            let content = document.getElementById("extraContent");
+            let button = document.getElementById("toggleBtn");
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.textContent = "Show Less";
+            } else {
+                content.style.display = "none";
+                button.textContent = "Show More";
+            }
+        }
+    </script>
+
+</body>
+</html>
